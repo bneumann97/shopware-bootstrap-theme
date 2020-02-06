@@ -167,14 +167,6 @@
                                                     {block name='frontend_checkout_confirm_information_addresses_equal_panel_shipping'}
                                                         <div class="col-hd-6">
                                                             {block name='frontend_checkout_confirm_information_addresses_equal_panel_shipping_add_address'}
-                                                                <a href="{url controller=address}"
-                                                                   class="btn btn-primary btn-sm mtm-xs mtm-sm"
-                                                                   data-address-selection="true"
-                                                                   data-sessionKey="checkoutShippingAddressId"
-                                                                   data-id="{$activeShippingAddressId}"
-                                                                   title="{s name="ConfirmAddressChooseDifferentShippingAddress"}Andere Lieferadresse{/s}">
-                                                                    {s name="ConfirmAddressChooseDifferentShippingAddress"}{/s}
-                                                                </a>
                                                             {/block}
                                                         </div>
                                                     {/block}
