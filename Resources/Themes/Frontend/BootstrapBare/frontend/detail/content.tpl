@@ -25,7 +25,17 @@
                     {*! Detailbox left *}
                     {block name='frontend_detail_left_grid'}
                         <div class="col-md-5">
+                        {block name='frontend_detail_index_name'}
+                            <div class="col-xs-12">
+                                <h1 itemprop="name" style="margin-top: 10px">
+                                    {$sArticle.articleName}
+                                </h1>
+                            </div>
+                        {/block}
                     {/block}
+                    {block name='frontend_detail_index_header_inner'}
+                        {* Product name *}
+
                     {block name='frontend_detail_index_left_inner'}
                         {* Product image *}
                         {block name='frontend_detail_index_image_container'}
@@ -36,33 +46,16 @@
                 {/block}
                 {block name='frontend_detail_index_right'}
                     {block name='frontend_detail_right_grid'}
-                        <div class="col-md-7">
+                        <div class="col-7">
                     {/block}
                     {block name='frontend_detail_index_right_inner'}
                         {* Product header *}
                         {block name='frontend_detail_index_header'}
-                            <div class="row">
-                                {block name='frontend_detail_index_header_inner'}
-                                    {* Product name *}
-                                    {block name='frontend_detail_index_name'}
-                                        <div class="col-xs-12{if $sArticle.supplierImg} col-sm-9{/if}">
-                                            <h1 itemprop="name">
-                                                {$sArticle.articleName}
-                                            </h1>
-                                        </div>
-                                    {/block}
+
                                     {* Product - Supplier information *}
                                     {block name='frontend_detail_supplier_info'}
-                                        {if $sArticle.supplierImg}
-                                            <div class="hidden-xs col-sm-3">
-                                                <a href="{url controller='listing' action='manufacturer' sSupplier=$sArticle.supplierID}" title="{"{s name="DetailDescriptionLinkInformation" namespace="frontend/detail/description"}{/s}"|escape}">
-                                                    <img src="{$sArticle.supplierImg}" alt="{$sArticle.supplierName|escape}" class="img-responsive mtl mbl">
-                                                </a>
-                                            </div>
-                                        {/if}
                                     {/block}
                                 {/block}
-                            </div>
                         {/block}
                         {block name='frontend_detail_index_overview'}
                             {*! Detailbox middle *}

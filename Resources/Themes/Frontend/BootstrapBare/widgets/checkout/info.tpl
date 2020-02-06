@@ -80,20 +80,8 @@
                     {/block}
 
                     {block name="frontend_index_checkout_actions_notepad"}
-                        <li class="entry-notepad sw5-plugin" role="menuitem">
-                            <a href="{url controller='note'}" title="{s namespace='frontend/index/checkout_actions' name='IndexLinkNotepad'}{/s}">
-                                {s namespace='frontend/index/checkout_actions' name='IndexLinkNotepad'}{/s}
-                                <span class="badge notes-quantity sw5-plugin{if $sNotesQuantity <= 0} hidden{/if}">{$sNotesQuantity}</span>
-                            </a>
-                        </li>
                     {/block}
                     {block name="frontend_index_checkout_actions_service_menu"}
-                        <li class="dropdown" role="menuitem">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{s name='IndexLinkService'}Service/Hilfe{/s}<b class="caret"></b></a>
-                            <ul class="dropdown-menu dropdown-menu-right">
-                                {action module=widgets controller=index action=menu group=gLeft}
-                            </ul>
-                        </li>
                     {/block}
                 {/block}
             </ul>
