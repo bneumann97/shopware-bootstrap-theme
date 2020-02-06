@@ -44,13 +44,6 @@
                             </div>
                         {/block}
                     </div>
-                {/if}    
-                    
-                {* Shipping costs pre-calculation *}
-                {if $sBasket.content && !$sUserLoggedIn && !$sUserData.additional.user.id && {config name=basketShowCalculation}}
-                    {block name='frontend_checkout_shipping_costs_country_include'}
-                        {include file="frontend/checkout/shipping_costs.tpl"}
-                    {/block}
                 {/if}
             </div>
         {/block}
@@ -62,25 +55,6 @@
                 {* Field labels *}
                 {block name='frontend_checkout_cart_footer_field_labels'}
                     <dl class="dl-horizontal dl-checkout mtl">
-                        {* Basket sum *}
-                        {block name='frontend_checkout_cart_footer_field_labels_sum'}
-                            {block name='frontend_checkout_cart_footer_field_labels_sum_label'}
-                                <dt>{s name="CartFooterLabelSum"}{/s}</dt>
-                            {/block}
-                            {block name='frontend_checkout_cart_footer_field_labels_sum_value'}
-                                <dd>{$sBasket.Amount|currency}</dd>
-                            {/block}
-                        {/block}
-
-                        {* Shipping costs *}
-                        {block name='frontend_checkout_cart_footer_field_labels_shipping'}
-                            {block name='frontend_checkout_cart_footer_field_labels_shipping_label'}
-                                <dt>{s name="CartFooterLabelShipping"}{/s}</dt>
-                            {/block}
-                            {block name='frontend_checkout_cart_footer_field_labels_shipping_value'}
-                                <dd>{$sShippingcosts|currency}</dd>
-                            {/block}
-                        {/block}
 
                         {* Total sum *}
                         {block name='frontend_checkout_cart_footer_field_labels_total'}
