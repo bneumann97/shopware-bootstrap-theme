@@ -202,14 +202,6 @@
                                     {block name="frontend_index_footer_container_include"}
                                         {include file='frontend/index/footer.tpl'}
                                     {/block}
-                                    
-                                    {block name="frontend_index_footer_bootstrap_link"}
-                                        <p class="text-center">
-                                            <small>
-                                                {s name="IndexFooterBootstrapLink"}<a href="http://www.bootstrap.de" target="_blank" title="Shopware Bootstrap Theme" rel="">Shopware Bootstrap Theme</a>{/s}
-                                            </small>
-                                        </p>
-                                    {/block}
                                 {/block}
                             </div>
                         {/block}

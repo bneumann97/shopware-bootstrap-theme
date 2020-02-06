@@ -26,14 +26,6 @@
                         </p>
                     </div>
                 {/block}
-
-                {block name="frontend_index_minimal_footer_bootstrap_link"}
-                    <p class="text-center">
-                        <small>
-                            {s name="IndexFooterBootstrapLink" namespace="frontend/index/index"}{/s}
-                        </small>
-                    </p>
-                {/block}
             {/if}
         </div>
     </footer>    
