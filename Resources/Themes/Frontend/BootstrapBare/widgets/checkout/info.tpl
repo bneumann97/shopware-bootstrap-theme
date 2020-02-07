@@ -101,15 +101,8 @@
                     {action module=widgets controller=index action=shopMenu}
                 {/block}
                 {block name='frontend_index_checkout_actions_notepad_xs'}
-                    <a href="{url controller='note' action='index'}" class="btn btn-default visible-xs visible-sm" title="{s namespace='frontend/index/checkout_actions' name='IndexLinkNotepad'}{/s}">
-                        <i class="fa fa-list fa-lg"></i>
-                        {if $sNotesQuantity > 0}<span class="badge mls">{$sNotesQuantity}</span>{/if}
-                    </a>
                 {/block}
                 <div class="btn-group visible-xs visible-sm">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" title="{s name='IndexLinkService'}Service/Hilfe{/s}">
-                        <i class="fa fa-question fa-lg"></i>
-                    </button>
                     <ul class="dropdown-menu dropdown-menu-right">
                         {action module=widgets controller=index action=menu group=gLeft}
                     </ul>
