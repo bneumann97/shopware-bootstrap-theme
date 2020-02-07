@@ -35,7 +35,6 @@
                     {/block}
                     {block name='frontend_detail_index_header_inner'}
                         {* Product name *}
-
                     {block name='frontend_detail_index_left_inner'}
                         {* Product image *}
                         {block name='frontend_detail_index_image_container'}
